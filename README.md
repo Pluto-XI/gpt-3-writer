@@ -10,10 +10,10 @@ This project has a web front-end and interacts with the OpenAI api in order to u
 ## GPT-3
 I learned how to input a prompt into GPT-3, it honestly feels magical. This specific model was kinda mind-blowing to work with. I learned a bit about "prompt engineering". Here are some tips from the very awesome buildspace community.
 
--Good results don't come ASAP, it may take a bit
--Iterate fast and don't get too attached to specific prompts
--GPT-3's output can vary wildly based on a few words.
--Don't force a prompt, if after 6-12 attemps feel free to drop the prompt.
+- Good results don't come ASAP, it may take a bit
+- Iterate fast and don't get too attached to specific prompts
+- GPT-3's output can vary wildly based on a few words.
+- Don't force a prompt, if after 6-12 attemps feel free to drop the prompt.
 
 ### Prompts
 To start and "program" the model, we needed to give GPT-3 some prompts, which is just some text. This itself feels a bit like an artform. The structure I followed was having GPT-3 create a title of a story and then I could expand off of it. I had to provide it things like, a title, setting, character and their features, etc. I had to tell it where I wanted my story and the plot and it could immediately start outputting the story I had imagined.
