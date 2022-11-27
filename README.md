@@ -27,6 +27,11 @@ GPT-3 has 175 billion parameters and is 800 GB in size. (Thank you OpenAI)
 Each parameter looks something like ```output = input * parameter``` The math is simplified, but it's the general idea.
 Input is the sentence and paramter is the unique number. We gather up all the outputs from the 175 billion unique parameters, combine them, and get our final output: words that complete the sentence.
 
-You may be wondering how we can multiply a sentence with a bunch of numbers. Basically, each sentence is broken up into “tokens” where the sentence is basically converted into a set of numbers.
+You may be wondering how we can multiply a sentence with a bunch of numbers. Basically, each sentence is broken up into “tokens” where the sentence is basically converted into a set of numbers called a token.
 
-GPT-3 has a dictionary it’s created that maps pieces of words to numbers.
+GPT-3 has a dictionary it’s created that maps pieces of words to numbers. GPT-3 understands language differently than us, it just sees numbers/tokens.
+
+The parameters are the heart of GPT-3, the parameters were trained on a dataset the included a ton of text from the internet. Wikipedia, news articles, blogs, github repos, twitter, forums, etc. It was trained on nearly 500 billion tokens from the internet. GPT-3 has seen it all.(or a good chunk of it).
+
+For example, while training we may remove the last word from a sentence "All robots should ~~obey~~"
+
