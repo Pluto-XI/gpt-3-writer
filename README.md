@@ -34,7 +34,7 @@ GPT-3 has a dictionary it’s created that maps pieces of words to numbers. GPT-
 
 The parameters are the heart of GPT-3, the parameters were trained on a dataset the included a ton of text from the internet. Wikipedia, news articles, blogs, github repos, twitter, forums, etc. It was trained on nearly 500 billion tokens from the internet. GPT-3 has seen it all.(or a good chunk of it).
 
-For example, while training we may remove the last word from a sentence "All robots should ~~obey~~" and have GPT guess the last word. If it guesses wrong such as guessing "exterminate" rather than obey we tell it (conceptually not the actual math) that it was off by a margin of "error". ex: obey = 1000 and exterminate = 500, error = obey - exterminate. See a visualization here(https://jalammar.github.io/images/gpt3/03-gpt3-training-step-back-prop.gif?utm_source=buildspace.so&utm_medium=buildspace_project).
+For example, while training we may remove the last word from a sentence "All robots should ~~obey~~" and have GPT guess the last word. If it guesses wrong such as guessing "exterminate" rather than obey we tell it (conceptually not the actual math) that it was off by a margin of "error". ex: obey = 1000 and exterminate = 500, error = obey - exterminate. See a visualization [here](https://jalammar.github.io/images/gpt3/03-gpt3-training-step-back-prop.gif?utm_source=buildspace.so&utm_medium=buildspace_project).
 
 
 
