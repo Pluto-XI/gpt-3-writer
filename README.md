@@ -1,0 +1,2 @@
+# GPT-3 Writer
+This is a project to learn more about machine learning/AI models and how to work with them. This is a project I've been looking forward to for a while and I'm super excited to have finally started working on it. 
