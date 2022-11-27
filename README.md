@@ -9,6 +9,7 @@ This project has a web front-end and interacts with the OpenAI api in order to u
 
 ## GPT-3
 I learned how to input a prompt into GPT-3, it honestly feels magical. This specific model was kinda mind-blowing to work with. I learned a bit about "prompt engineering". Here are some tips from the very awesome buildspace community.
+
 -Good results don't come ASAP, it may take a bit
 -Iterate fast and don't get too attached to specific prompts
 -GPT-3's output can vary wildly based on a few words.
