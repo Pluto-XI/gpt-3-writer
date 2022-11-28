@@ -49,7 +49,7 @@ const Home = () => {
         </div>
         <div className="prompt-container">
           <textarea
-            placeholder="Start typing here"
+            placeholder="We're building a GPT-3 powered app that can generate a Venture Capital pitch for new start ups!"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}

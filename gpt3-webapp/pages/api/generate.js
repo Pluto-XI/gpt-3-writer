@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 
-const basePromptPrefix = "Write a very detailed pitch to a VC for a startup that includes the problems it is solving, the detailed solutions, market size, and the business plan. This start-up is building:\n";
+const basePromptPrefix = "Write a very detailed pitch to a VC for a startup that includes the problems it is solving, the detailed solutions, market size, and the business plan. This start-up is building a:\n";
 const generateAction = async (req, res) => {
     //Run our first prompt
     console.log(`API: ${basePromptPrefix}${req.body.userInput}`);
