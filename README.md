@@ -34,7 +34,38 @@ GPT-3 has a dictionary it’s created that maps pieces of words to numbers. GPT-
 
 The parameters are the heart of GPT-3, the parameters were trained on a dataset the included a ton of text from the internet. Wikipedia, news articles, blogs, github repos, twitter, forums, etc. It was trained on nearly 500 billion tokens from the internet. GPT-3 has seen it all.(or a good chunk of it).
 
-For example, while training we may remove the last word from a sentence "All robots should ~~obey~~" and have GPT guess the last word. If it guesses wrong such as guessing "exterminate" rather than obey we tell it (conceptually not the actual math) that it was off by a margin of "error". ex: obey = 1000 and exterminate = 500, error = obey - exterminate. See a visualization [here](https://jalammar.github.io/images/gpt3/03-gpt3-training-step-back-prop.gif?utm_source=buildspace.so&utm_medium=buildspace_project).
+For example, while training we may remove the last word from a sentence "All robots should ~~obey~~" and have GPT guess the last word. If it guesses wrong such as guessing "exterminate" rather than obey we tell it (conceptually not the actual math) that it was off by a margin of "error". ex: obey = 1000 and exterminate = 500, error = obey - exterminate. See a visualization [here](https://jalammar.github.io/images/gpt3/03-gpt3-training-step-back-prop.gif?utm_source=buildspace.so&utm_medium=buildspace_project). This is unsupervised training and the basics of deep learning. It's the heart of GPT-3. It just trained on the billions of sentences created by humanity on the internet and it came out knowing how to complete sentences, culture, and feels like it has a real understanding.
+I plan on taking this course [here](https://course.fast.ai/Lessons/lesson3.html?utm_source=buildspace.so&utm_medium=buildspace_project) after this project is complete.
+
+# Further prompts and applications
+GPT-3 can replicate a conversation with specific individuals instead of just stories. For example, if we wanted to talk to Steve jobs we just preface our input with "This is a chat with Steve Jobs, the founder of Apple" and GPT-3 will mimic Steve.
+
+This is called prompt chaining. We took the output from the prompt in Playground #1 and plugged it into another specialized prompt in Playground #2. You can keep doing this, and it’ll get even better at a specialized task.
+
+Why does this work so well?
+
+Well again — GPT-3 does better when 1) you give it more examples 2) you are highly specific in terms of what you ask from it. Prompt chaining blends these two!
+
+Here are other examples of prompts you can chain:
+
+    generate a table of contents for a blog → write a sentence for each section → for each sentence, write two paragraphs → done
+    generate a sad love story about a boy and a girl → generate a rap chorus → generate a chrous that rhymes and has lyrics in the style of drake → generate the intro and outro verse based on the chorus → done.
+    generate headline landing page copy for a product → generate more detailed copy for the product → generate ad copy targeted to 26-year-olds in Pakistan → done
+
+Prompt chaining is highly underrated and not talked about much. It really lets you get really great performance for specific tasks you have in mind.
+
+## Creating an application that uses GPT-3
+We're going to create a prompt and fill in words with our users input. For example, if I wanted to create an app that creates landing page titles, my prompt would look like this.
+
+```
+Write a list of short landing page headlines in the style of Apple for a startup that builds the following: {userInput}
+```
+
+
+ 
+
+
+
 
 
 
