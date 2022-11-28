@@ -44,7 +44,7 @@ const Home = () => {
             <h1>VC Pitch Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Tell us a bit about your business, what are you building? The more detail the better.</h2>
+            <h2>Tell us a bit about your business, what are you building?</h2>
           </div>
         </div>
         <div className="prompt-container">
