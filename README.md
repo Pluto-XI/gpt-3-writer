@@ -61,6 +61,10 @@ We're going to create a prompt and fill in words with our users input. For examp
 Write a list of short landing page headlines in the style of Apple for a startup that builds the following: {userInput}
 ```
 
+We had to set-up our front-end to call our backend. Without exposing any API keys of course. We have to set up a backend in order to call OpenAI securely. Setting up a server is a pain so we're going to be using <i>serverless functions</i> with NextJS. These run on the cloud on demand and we don't need to maintain our own server.
+
+
+
 
  
 
