@@ -65,10 +65,18 @@ We had to set-up our front-end to call our backend. Without exposing any API key
 
 This was the first time using NextJS, it was kinda wild. I'll have to delve deeper into it as it seems we just used it to call the api securely in this case.
 
+The front-end is where the prompt-engineering fell into place, it showed me why it is important. It is super cool and feels like more so an art than code.
 
 
- 
 
+ ### Browser Extension utilizing GPT-3
+Browser extensions are pretty simple - they’re made with the same stuff you make websites with: HTML, CSS and JS. You can think of an extension as an enclosed web app that has “under the hood” functionality to [secret things in Chrome](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/?utm_source=buildspace.so&utm_medium=buildspace_project) that regular websites don’t usually get access to!
+
+The three main parts we’re going to work with are:
+
+    The popup UI - built with plain HTML/CSS, this is what the user sees when they click the extension icon
+    Content scripts - JS files that handle the logic of our extension, including the logic of our popup UI
+    The service worker - also a JS file, this is like our server: it’s loaded to handle tasks in the background when needed and it goes idle after it’s done
 
 
 
