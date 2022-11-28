@@ -5,12 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="GPT-3 Writer" key="title"/>
-        <meta property="og:description" content="build with buildspace" key="description"/>
-        <meta
-          property="og:image"
-          content="https://cdn.buildspace.so/courses/gpt3-writer/project-og.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta property="og:description" content="GPT-3 writer shipped with the buildspace community" key="description"/>
       </Head>
       <body>
         <Main />
