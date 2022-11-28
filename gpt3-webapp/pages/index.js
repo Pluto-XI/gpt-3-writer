@@ -14,23 +14,28 @@ const Home = () => {
   };
 
   const callGenerateEndpoint = async () => {
-    setIsGenerating(true);
+    try {
+      setIsGenerating(true);
 
-    console.log("Calling OpenAI...");
-    const response = await fetch("/api/generate", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ userInput }),
-    });
+      console.log("Calling OpenAI...");
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userInput }),
+      });
 
-    const data = await response.json();
-    const { output } = data;
-    console.log("OpenAI replied...", output.text);
+      const data = await response.json();
+      const { output } = data;
+      console.log("OpenAI replied...", output.text);
 
-    setApiOutput(`${output.text}`);
-    setIsGenerating(false);
+      setApiOutput(`${output.text}`);
+      setIsGenerating(false);
+    } catch (error) {
+      setIsGenerating(false);
+      console.log(error);
+    }
   };
 
   return (
@@ -62,7 +67,11 @@ const Home = () => {
               onClick={callGenerateEndpoint}
             >
               <div className="generate">
-                {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+                {isGenerating ? (
+                  <span className="loader"></span>
+                ) : (
+                  <p>Generate</p>
+                )}
               </div>
             </a>
           </div>
