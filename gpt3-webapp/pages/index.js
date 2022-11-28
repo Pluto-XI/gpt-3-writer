@@ -41,10 +41,10 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Business Headline Generator</h1>
+            <h1>VC Pitch Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Tell us a bit about your business and what it does.</h2>
+            <h2>Tell us a bit about your business, what are you building? The more detail the better.</h2>
           </div>
         </div>
         <div className="prompt-container">

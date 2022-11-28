@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 
-const basePromptPrefix = "";
+const basePromptPrefix = "Write me an extremely detailed pitch to a VC for a startup that includes the problem it's solving, the detailed solution, market size, and the business plan. This start-up is building:";
 const generateAction = async (req, res) => {
     //Run our first prompt
     console.log(`API: ${basePromptPrefix}${req.body.userInput}`);
@@ -16,7 +16,7 @@ const generateAction = async (req, res) => {
         model: 'text-davinci-002',
         prompt: `${basePromptPrefix}${req.body.userInput}`,
         temperature: 0.7,
-        max_tokens: 250,
+        max_tokens: 500,
     });
 
     const basePromptOutput = baseCompletion.data.choices.pop();
