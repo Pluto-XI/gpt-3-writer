@@ -360,7 +360,7 @@ textarea {
 
 @media (max-width: 600px) {
     .container {
-        max-width: 400px;
+        max-width: 325px;
         width: 100%;
     }
 
@@ -381,12 +381,18 @@ textarea {
     }
 
     .prompt-container {
-        max-width: 400px;
+        max-width: 320px;
         width: 100%;
     }
 
     .prompt-box {
         width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        max-width: 225px;
     }
 }
 
