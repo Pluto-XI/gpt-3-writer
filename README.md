@@ -7,6 +7,8 @@ GPT-3 is an AI model that is super good at writing what we want. It was trained 
 
 This project has a web front-end and interacts with the OpenAI api in order to utilize the GPT-3 model. I'm also building a browser extension that can inject text into a webpage that the user is on.
 
+This project is hosted on Vercel [here](https://gpt-3-writer-jbkt1miir-spacepluto.vercel.app/).
+
 Thank you to the [buildspace community](https://buildspace.so/)!!
 
 ## GPT-3
