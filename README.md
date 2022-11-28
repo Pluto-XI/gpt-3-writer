@@ -78,7 +78,7 @@ The three main parts we’re going to work with are:
     Content scripts - JS files that handle the logic of our extension, including the logic of our popup UI
     The service worker - also a JS file, this is like our server: it’s loaded to handle tasks in the background when needed and it goes idle after it’s done
 
-
+We built off of the manifest file for our extension. Browsers have strict security requirements and the manifest needs to explicitly declare what permissions it needs.
 
 
 
