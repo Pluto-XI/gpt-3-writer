@@ -7,6 +7,8 @@ GPT-3 is an AI model that is super good at writing what we want. It was trained 
 
 This project has a web front-end and interacts with the OpenAI api in order to utilize the GPT-3 model. I'm also building a browser extension that can inject text into a webpage that the user is on.
 
+Thank you to the [buildspace community](https://buildspace.so/)!!
+
 ## GPT-3
 I learned how to input a prompt into GPT-3, it honestly feels magical. This specific model was kinda mind-blowing to work with. I learned a bit about "prompt engineering". Here are some tips from the very awesome buildspace community.
 
@@ -89,5 +91,13 @@ We made a service worker that could call our OpenAI api. It pulled a key from lo
     When we send a certain message, the extension injects a value into the DOM
 
 The extension is acts as our middleman to get GPT to make a beautiful story and brings it back to us.
+
+Our extension utilized a service-worker to call our API and then used messages to deliver it to our front end. We also set up a message listener that we then used to modify our DOM with our generated text. It was really fun working with this.
+
+Remember, the reason it won’t work on any site right now is because every site has a very different HTML structure. So, if you wanna get it working on another site you just gotta inspect that site’s HTML structure and then write some code specific to that site’s HTML. 
+
+We used the html structure for [Calmly](https://www.calmlywriter.com/online/)
+
+To get the extension on the Chrome store, it would need to be submitted for approval. 
 
 
