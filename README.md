@@ -82,5 +82,12 @@ We built off of the manifest file for our extension. Browsers have strict securi
 
 I hadn't built an extension before so it was super cool getting one created finally. It's just JS, CSS, and HTML. Wild to see. I could load the unpacked extension into my Chrome browser directly.
 
+We made a service worker that could call our OpenAI api. It pulled a key from local storage, made the call and posted it into the service workers console. The service worker doesn't have access to the DOM. We use messaging to get around this.
+
+    Write a messenger in our service worker that sends messages to our UI
+    Create a new file that can listen for messages from our service worker
+    When we send a certain message, the extension injects a value into the DOM
+
+The extension is acts as our middleman to get GPT to make a beautiful story and brings it back to us.
 
 
