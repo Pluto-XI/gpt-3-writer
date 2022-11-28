@@ -23,7 +23,7 @@ const generateAction = async (req, res) => {
 
     const secondPrompt = `
     pitch: ${basePromptOutput.text}\n
-    prompt: ${req.body.userInput}\n
+    "Prompt: Write a very detailed pitch to a VC for a startup that includes the problems it is solving, the detailed solutions, market size, and the business plan. This start-up is building a:\n" ${req.body.userInput}\n
     pitch:\n
     `
     const secondPromptCompletion = await openai.createCompletion({
