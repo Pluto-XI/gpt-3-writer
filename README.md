@@ -80,5 +80,7 @@ The three main parts we’re going to work with are:
 
 We built off of the manifest file for our extension. Browsers have strict security requirements and the manifest needs to explicitly declare what permissions it needs.
 
+I hadn't built an extension before so it was super cool getting one created finally. It's just JS, CSS, and HTML. Wild to see. I could load the unpacked extension into my Chrome browser directly.
+
 
 

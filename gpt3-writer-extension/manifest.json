@@ -13,5 +13,8 @@
     "default_popup": "index.html",
     "default_title": "Generate song lyrics"
   },
+  "background": {
+    "service_worker": "scripts/contextMenuServiceWorker.js"
+  },
   "permissions": ["contextMenus", "tabs", "storage"]
 }
